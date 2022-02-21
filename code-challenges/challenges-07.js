@@ -253,4 +253,4 @@ const classesAvg = (data) => {
 };
 // -------------------------------------------------------------------------------------------------------
 
-module.exports = { objLat, cvFormatter, applicationsStatics, classesAvg };
+module.exports = { objLet, cvFormatter, applicationsStatics, classesAvg };
