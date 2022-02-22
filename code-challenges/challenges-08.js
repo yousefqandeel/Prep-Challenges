@@ -26,20 +26,15 @@
 // Output:
 // ["Customer Name :Romio Joliat , Age :35", "Customer Name :Mario Ristrova , Age :39", ... ]
 
-let recipeInfo = {
-  "Romio Joliat": 35,
-  "Mario Ristrova": 39,
-  "Sofia firnando": 50,
-}
-const cars = [];
-
-function myFunction(recipeInfo, cars) {
-  for (const [key, value] of Object.entries(recipeInfo)) {
-    cars.push(`Customer Name:${key},Age: ${value}`);
-
+const customerAndAge = (obj) => {
+  let arr = [];
+  for (const property in obj) {
+    let text = `Customer Name :${property} , Age :${obj[property]}`;
+    arr.push(text);
   }
-  return cars;
-}
+
+  return arr;
+};
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -63,22 +58,15 @@ function myFunction(recipeInfo, cars) {
 // Note:
 // You can solve this challenge by using Object.entries
 
-let recipeInfo = {
-  name: "pizza",
-  ingredients: ["bread", "tomato", "chicken", "mayo"],
-  cookTime: "twoHours",
-  price: "25$",
-};
-const cars = [];
-
-function myFunction(recipeInfo, cars) {
-  for (const [key, value] of Object.entries(recipeInfo)) {
-    cars.push(`${key}: ${value}`);
-
+const getEntries = (obj) => {
+  let text = null;
+  let arr = [];
+  for (const [key, value] of Object.entries(obj)) {
+    text = `${key}: ${value}`;
+    arr.push(text);
   }
-  return cars;
+  return arr;
 };
-
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
