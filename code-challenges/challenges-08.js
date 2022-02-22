@@ -27,7 +27,13 @@
 // ["Customer Name :Romio Joliat , Age :35", "Customer Name :Mario Ristrova , Age :39", ... ]
 
 const customerAndAge = (obj) => {
-  // write your code here
+  let arr = [];
+  for (const property in obj) {
+    let text = `Customer Name :${property} , Age :${obj[property]}`;
+    arr.push(text);
+  }
+
+  return arr;
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -53,7 +59,13 @@ const customerAndAge = (obj) => {
 // You can solve this challenge by using Object.entries
 
 const getEntries = (obj) => {
-  // write your code here
+  let text = null;
+  let arr = [];
+  for (const [key, value] of Object.entries(obj)) {
+    text = `${key}: ${value}`;
+    arr.push(text);
+  }
+  return arr;
 };
 // -------------------------------------------------------------------------------------------------------
 
