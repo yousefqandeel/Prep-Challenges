@@ -28,6 +28,10 @@ const arrInc = (arr) => {
 }// -------------------------------------------------------------------------------------------------------
 
 
+    // write your code here
+    return result;
+}
+
 
 // -------------------------------------------------------------------------------------------------------
 // Challenge 02:
@@ -48,8 +52,6 @@ const roundDecimals = (arr) => {
     }
 
     return arr;
-
-    // write your code here
 
 }
 // -------------------------------------------------------------------------------------------------------
@@ -119,7 +121,6 @@ const roundDecimals = (arr) => {
 //
 
 const employeesBonus = (arr) => {
-
     let salary;
     let dolarSign = "$";
     for (let i = 0; i < arr.length; i++) {
@@ -141,6 +142,9 @@ const employeesBonus = (arr) => {
         }
     }
     return arr;
+
+
+
 
 
 }

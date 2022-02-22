@@ -1,6 +1,5 @@
 'use strict';
 
-const { TYPES } = require("@babel/types");
 
 // -------------------------------------------------------------------------------------------------------
 //  Challenge 01:
@@ -14,12 +13,14 @@ const { TYPES } = require("@babel/types");
 //  
 
 const findMax = (arr) => {
-    let max = arr[0];;
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > max)
+    let max;
+    max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
             max = arr[i];
-    }
+        }
 
+    }
     return max;
 };
 // -------------------------------------------------------------------------------------------------------
@@ -36,10 +37,10 @@ const findMax = (arr) => {
 //  
 
 const sumNums = (arr) => {
-    let sum = 0;
-    let type = 1;
+    let sum;
+    sum = 0;
     for (let i = 0; i < arr.length; i++) {
-        if (typeof (arr[i]) == typeof (type)) {
+        if (typeof (arr[i]) == "number") {
             sum += arr[i];
         }
     }
@@ -58,13 +59,16 @@ const sumNums = (arr) => {
 // Output: ['Python','Ruby','JS','C#']
 
 const reverseArray = (arr) => {
-    let reversed = [];
-    let count = 0;
-    for (let i = arr.length - 1; i >= 0; i++) {
-        reversed[count] = arr[i];
-        count++;
+    let arr2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        arr2[i] = arr[i];
     }
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr2[arr.length - 1 - i];
+    }
+    return arr;
 };
+
 // -------------------------------------------------------------------------------------------------------
 
 module.exports = { findMax, sumNums, reverseArray }; 
