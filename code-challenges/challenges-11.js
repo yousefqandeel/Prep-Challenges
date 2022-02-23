@@ -17,11 +17,9 @@
 // 
 
 function square(arr) {
-    let newarr = new Array();
-
-    arr.forEach(element => newarr.push(element * element));
-    return newarr;
-}
+    const map = arr.map(x => x * x);
+    return map;
+};
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -59,11 +57,11 @@ function square(arr) {
 // Output: ['Adam Anderson', 'Ben Zeller', 'Peter Mccord', 'Fred Sagar', 'Nathan Weiss']
 
 function fullName(arr) {
-    let newarr = new Array();
+    const map = arr.map(x => x.firstName + ' ' + x.lastName);
+    return map;
+};
 
-    arr.forEach(element => newarr.push(element["firstName"] + " " + element["lastName"]));
-    return newarr;
-}// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
 // Challenge 03:
