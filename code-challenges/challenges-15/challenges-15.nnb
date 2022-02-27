@@ -1,0 +1,67 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Hacker Rank\n\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\nFollow the links below:\nread them carefully and solve them then copy-paste your solution below in Code Block"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Required**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Equality In An Array](https://www.hackerrank.com/challenges/equality-in-a-array/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function processData(input) {\r\n    var arr = input.split('\\n');\r\n    var len = Number(arr[0]);\r\n    var numbers = arr[1].split(\" \").map(Number);\r\n    \r\n    function deleteElement(a, l){\r\n        var dict = {}; \r\n        var key; \r\n        var max = 0; \r\n        for(var i = 0; i < l; i++){\r\n            key = a[i]\r\n            if(key in dict){\r\n                dict[key]++; \r\n            } else {\r\n                dict[key] = 1; \r\n            }\r\n        }\r\n        for(var prop in dict){\r\n            if(dict[prop] > max){\r\n                max = dict[prop];\r\n            }\r\n        }\r\n        return l - max; \r\n    }\r\n    console.log(deleteElement(numbers, len).toString());\r\n} \r\n\r\nprocess.stdin.resume();\r\nprocess.stdin.setEncoding(\"ascii\");\r\n_input = \"\";\r\nprocess.stdin.on(\"data\", function (input) {\r\n    _input += input;\r\n});\r\n\r\nprocess.stdin.on(\"end\", function () {\r\n   processData(_input);\r\n});"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Optional**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Halloween Sale](https://www.hackerrank.com/challenges/halloween-sale/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Sherlock And Squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}
